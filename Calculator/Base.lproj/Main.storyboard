@@ -40,6 +40,9 @@
                                                 <state key="normal" title="AC">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVK-Z7-mZO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlR-Po-nO2">
                                                 <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -49,6 +52,9 @@
                                                 <state key="normal" title="+/-">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oqx-u9-sHS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPy-kU-o6C">
                                                 <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="124.66666666666667"/>
@@ -58,6 +64,9 @@
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMT-yA-wYJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EO0-ck-vyn">
                                                 <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -67,6 +76,9 @@
                                                 <state key="normal" title="÷">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CsR-CN-xc3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -81,6 +93,9 @@
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5o6-Ch-uwZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUi-Fl-hOi">
                                                 <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -90,6 +105,9 @@
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANR-SI-kaz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zku-XZ-Zl6">
                                                 <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="124.66666666666667"/>
@@ -99,6 +117,9 @@
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fkp-eo-WRd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbR-Id-uM4">
                                                 <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -108,6 +129,9 @@
                                                 <state key="normal" title="x">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ae1-ZB-moc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -122,6 +146,9 @@
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fk3-xj-Fb9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMp-ph-VOz">
                                                 <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -131,6 +158,9 @@
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9s0-Z6-zEg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wx-57-CqF">
                                                 <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="124.66666666666667"/>
@@ -140,6 +170,9 @@
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVq-MG-Q8a"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vv8-hg-TVP">
                                                 <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -149,6 +182,9 @@
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwk-V7-oTR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -163,6 +199,9 @@
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g58-Ac-0sw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXk-ZT-hba">
                                                 <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -172,6 +211,9 @@
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kHh-Bm-ugQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8r-Cj-eav">
                                                 <rect key="frame" x="197" y="0.0" width="97.666666666666686" height="124.66666666666667"/>
@@ -181,6 +223,9 @@
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQu-Y2-duS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMY-Za-pmA">
                                                 <rect key="frame" x="295.66666666666669" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -190,6 +235,9 @@
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CUj-mx-1OD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -204,6 +252,9 @@
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwt-Pi-IJ5"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tq7-c2-oQz">
                                                 <rect key="frame" x="197" y="0.0" width="196" height="124.66666666666667"/>
@@ -216,6 +267,9 @@
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsM-up-YFp"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lO5-fC-qxm">
                                                         <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
@@ -225,6 +279,9 @@
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buttonPressedAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIn-xn-gIP"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

@@ -1,19 +1,15 @@
-//
-//  ViewController.swift
-//  Calculator
-//
-//  Created by Denis Fomin on 5/13/25.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("Trying creating a new branch.")
+    
+    @IBAction func buttonPressedAnimation(_ sender: UIButton) {
+        
+        let buttonBgColor = sender.backgroundColor
+        sender.backgroundColor = .lightGray
+        
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { (timer) in
+            sender.backgroundColor = buttonBgColor
+        }
     }
-
-
 }
 
