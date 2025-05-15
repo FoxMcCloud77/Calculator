@@ -55,14 +55,110 @@ class ViewController: UIViewController {
                 guard var currentText = outputLabel.text else {return}
                 
                 if !currentText.contains("%") {
-                    currentText = currentText + "%"
+                    currentText = currentText + buttonText
                 } else {
                     currentText = currentText.replacingOccurrences(of: "%", with: "")
                 }
                 
                 outputLabel.text = currentText
                 break
+            case "+":
+                guard let currentText = outputLabel.text else {return}
+                if !currentText.contains("+") {
+                    outputLabel.text = currentText + buttonText
+                }
+                break
+            case "-":
+                guard let currentText = outputLabel.text else {return}
+                if !currentText.contains("-") {
+                    outputLabel.text = currentText + buttonText
+                }
+                break
+            case "x":
+                guard let currentText = outputLabel.text else {return}
+                if !currentText.contains("x") {
+                    outputLabel.text = currentText + buttonText
+                }
+                break
+            case "÷":
+                guard let currentText = outputLabel.text else {return}
+                if !currentText.contains("÷") {
+                    outputLabel.text = currentText + buttonText
+                }
+                break
+            case "=":
+                guard let currentText = outputLabel.text else {return}
+                var firstNumber: Double = 0.0
+                var secondNumber: Double = 0.0
+                
+                if currentText.contains("+") {
+                    if let firstSubstring = currentText.split(separator: "+").first {
+                        let firstNum = String(firstSubstring)
+                        if let num = Double(firstNum) {
+                            firstNumber = num
+                        }
+                    }
+                    if let secondSubstring = currentText.split(separator: "+").last {
+                        let secondNum = String(secondSubstring)
+                        if let num = Double(secondNum) {
+                            secondNumber = num
+                        }
+                    }
+                    let result = (firstNumber + secondNumber) == floor((firstNumber + secondNumber)) ? String(format: "%.0f", (firstNumber + secondNumber)) : String((firstNumber + secondNumber))
+                    
+                    outputLabel.text = String(result)
+                } else if currentText.contains("-") {
+                    if let firstSubstring = currentText.split(separator: "-").first {
+                        let firstNum = String(firstSubstring)
+                        if let num = Double(firstNum) {
+                            firstNumber = num
+                        }
+                    }
+                    if let secondSubstring = currentText.split(separator: "-").last {
+                        let secondNum = String(secondSubstring)
+                        if let num = Double(secondNum) {
+                            secondNumber = num
+                        }
+                    }
+                    let result = (firstNumber - secondNumber) == floor((firstNumber - secondNumber)) ? String(format: "%.0f", (firstNumber - secondNumber)) : String((firstNumber - secondNumber))
+                    
+                    outputLabel.text = String(result)
+                } else if currentText.contains("x") {
+                    if let firstSubstring = currentText.split(separator: "x").first {
+                        let firstNum = String(firstSubstring)
+                        if let num = Double(firstNum) {
+                            firstNumber = num
+                        }
+                    }
+                    if let secondSubstring = currentText.split(separator: "x").last {
+                        let secondNum = String(secondSubstring)
+                        if let num = Double(secondNum) {
+                            secondNumber = num
+                        }
+                    }
+                    let result = (firstNumber * secondNumber) == floor((firstNumber * secondNumber)) ? String(format: "%.0f", (firstNumber * secondNumber)) : String((firstNumber * secondNumber))
+                    
+                    outputLabel.text = String(result)
+                } else if currentText.contains("÷") {
+                    if let firstSubstring = currentText.split(separator: "÷").first {
+                        let firstNum = String(firstSubstring)
+                        if let num = Double(firstNum) {
+                            firstNumber = num
+                        }
+                    }
+                    if let secondSubstring = currentText.split(separator: "÷").last {
+                        let secondNum = String(secondSubstring)
+                        if let num = Double(secondNum) {
+                            secondNumber = num
+                        }
+                    }
+                    let result = (firstNumber / secondNumber) == floor((firstNumber / secondNumber)) ? String(format: "%.0f", (firstNumber / secondNumber)) : String((firstNumber / secondNumber))
+                    
+                    outputLabel.text = String(result)
+                }
+                break
             default:
+                print("Invalid Input")
                 break
             }
         }
