@@ -320,10 +320,17 @@
                                     <constraint firstAttribute="trailing" secondItem="7Vh-cp-9hs" secondAttribute="trailing" id="zse-6V-WoC"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="slb-cS-nLF" userLabel="ResultLabel">
+                                <rect key="frame" x="20" y="59" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="slb-cS-nLF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Sd-ps-9c5"/>
                             <constraint firstAttribute="bottom" secondItem="0p0-a2-EHm" secondAttribute="bottom" id="4Xm-ip-k3P"/>
                             <constraint firstItem="Dv7-TR-y4I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ayb-QT-E7x"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VYk-B4-Mrp" secondAttribute="trailing" id="B9n-xR-8so"/>
@@ -332,14 +339,18 @@
                             <constraint firstItem="VYk-B4-Mrp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tk8-T3-egp"/>
                             <constraint firstAttribute="bottom" secondItem="VYk-B4-Mrp" secondAttribute="bottom" id="TtN-ei-NIT"/>
                             <constraint firstItem="Dv7-TR-y4I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XcM-Ru-mhs"/>
+                            <constraint firstItem="slb-cS-nLF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZEG-S9-IMO"/>
                             <constraint firstItem="0p0-a2-EHm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bGh-N8-jO3"/>
                             <constraint firstItem="0p0-a2-EHm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dQ5-JX-vBx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="slb-cS-nLF" secondAttribute="trailing" constant="20" id="fzj-YL-fXg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dv7-TR-y4I" secondAttribute="trailing" constant="20" id="guY-lM-Mgc"/>
                             <constraint firstItem="0p0-a2-EHm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qgw-dn-pQe"/>
+                            <constraint firstItem="Dv7-TR-y4I" firstAttribute="top" secondItem="slb-cS-nLF" secondAttribute="bottom" constant="20" id="uHc-ma-OQe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="outputLabel" destination="Dv7-TR-y4I" id="P6B-tn-jMC"/>
+                        <outlet property="resultLabel" destination="slb-cS-nLF" id="rdP-ca-GDe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
