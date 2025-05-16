@@ -3,6 +3,10 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var savedValue: Double = 0.0
+    var result: Double = 0.0
     
     @IBAction func buttonPressedAnimation(_ sender: UIButton) {
         
@@ -18,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
         if let buttonText = sender.titleLabel?.text {
             switch buttonText {
-                case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
+            case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
                 if outputLabel.text == "0" {
                     if buttonText != "0" {
                         outputLabel.text = buttonText
@@ -29,12 +33,15 @@ class ViewController: UIViewController {
                 break
             case "AC":
                 outputLabel.text = "0"
+                resultLabel.text = ""
                 break
             case ".":
                 guard var currentText = outputLabel.text else {return}
                 
                 if !currentText.contains(".") {
                     currentText = currentText + buttonText
+                } else {
+                    currentText = currentText.replacingOccurrences(of: ".", with: "")
                 }
                 
                 outputLabel.text = currentText
@@ -49,20 +56,60 @@ class ViewController: UIViewController {
                 }
                 
                 outputLabel.text = currentText
-            break
+                break
             case "%":
-                // FOR % SYMBOL in case =, use |input.split(separator: "%").first| to get only part before % symbol to avoid error.
-                guard var currentText = outputLabel.text else {return}
-                
-                if !currentText.contains("%") {
-                    currentText = currentText + "%"
-                } else {
-                    currentText = currentText.replacingOccurrences(of: "%", with: "")
+                guard let currentText = outputLabel.text else {return}
+                savedValue = Double(currentText)!
+                result = savedValue / 100
+                outputLabel.text = String(result)
+                resultLabel.text = ""
+                break
+            case "+":
+                guard let currentText = outputLabel.text else {return}
+                savedValue = Double(currentText)!
+                resultLabel.text = currentText + " + "
+                outputLabel.text = "0"
+                break
+            case "-":
+                guard let currentText = outputLabel.text else {return}
+                savedValue = Double(currentText)!
+                resultLabel.text = currentText + " - "
+                outputLabel.text = "0"
+                break
+            case "x":
+                guard let currentText = outputLabel.text else {return}
+                savedValue = Double(currentText)!
+                resultLabel.text = currentText + " x "
+                outputLabel.text = "0"
+                break
+            case "÷":
+                guard let currentText = outputLabel.text else {return}
+                savedValue = Double(currentText)!
+                resultLabel.text = currentText + " ÷ "
+                outputLabel.text = "0"
+                break
+            case "=":
+                guard let currentText = outputLabel.text else {return}
+                if resultLabel.text!.contains("+") {
+                    result = savedValue + Double(currentText)!
+                    outputLabel.text = String(result)
+                    resultLabel.text = ""
+                } else if resultLabel.text!.contains("-") {
+                    result = savedValue - Double(currentText)!
+                    outputLabel.text = String(result)
+                    resultLabel.text = ""
+                } else if resultLabel.text!.contains("x") {
+                    result = savedValue * Double(currentText)!
+                    outputLabel.text = String(result)
+                    resultLabel.text = ""
+                } else if resultLabel.text!.contains("÷") {
+                    result = savedValue / Double(currentText)!
+                    outputLabel.text = String(result)
+                    resultLabel.text = ""
                 }
-                
-                outputLabel.text = currentText
                 break
             default:
+                print("Invalid Input")
                 break
             }
         }
