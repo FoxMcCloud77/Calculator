@@ -8,6 +8,14 @@ class ViewController: UIViewController {
     var savedValue: Double = 0.0
     var result: Double = 0.0
     
+    func formatResult(_ number: Double) -> String {
+        if number.truncatingRemainder(dividingBy: 1) == 0 {
+            return String(Int(number))
+        } else {
+            return String(number)
+        }
+    }
+    
     @IBAction func buttonPressedAnimation(_ sender: UIButton) {
         
         let buttonBgColor = sender.backgroundColor
@@ -92,19 +100,19 @@ class ViewController: UIViewController {
                 guard let currentText = outputLabel.text else {return}
                 if resultLabel.text!.contains("+") {
                     result = savedValue + Double(currentText)!
-                    outputLabel.text = String(result)
-                    resultLabel.text = ""
-                } else if resultLabel.text!.contains("-") {
-                    result = savedValue - Double(currentText)!
-                    outputLabel.text = String(result)
-                    resultLabel.text = ""
-                } else if resultLabel.text!.contains("x") {
-                    result = savedValue * Double(currentText)!
-                    outputLabel.text = String(result)
+                    outputLabel.text = formatResult(result)
                     resultLabel.text = ""
                 } else if resultLabel.text!.contains("÷") {
                     result = savedValue / Double(currentText)!
-                    outputLabel.text = String(result)
+                    outputLabel.text = formatResult(result)
+                    resultLabel.text = ""
+                } else if resultLabel.text!.contains("x") {
+                    result = savedValue * Double(currentText)!
+                    outputLabel.text = formatResult(result)
+                    resultLabel.text = ""
+                } else if resultLabel.text!.contains("-") {
+                    result = savedValue - Double(currentText)!
+                    outputLabel.text = formatResult(result)
                     resultLabel.text = ""
                 }
                 break
